@@ -74,35 +74,7 @@
                             <input id="latitude" value="{{ velo.latitude }}" type="hidden">
                             <input id="longitude" value="{{ velo.longitude }}" type="hidden">
 
-                            <script>
-                                // Initialize and add the map
-                                function initMap() {
-                                    // The location of myLatLng
-
-                                    let latitude = document.getElementById('latitude').value;
-                                    let longitude = document.getElementById('longitude').value;
-
-                                    let myLatLng = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
-
-                                    // The map, centered at myLatLng
-                                    let map = new google.maps.Map(
-                                        document.getElementById('map'), {zoom: 15, center: myLatLng});
-                                    // The marker, positioned at myLatLng
-                                    //var marker = new google.maps.Marker({position: myLatLng, map: map});
-                                    // The marker, zone cercle myLatLng
-                                    let zone = new google.maps.Circle({
-                                        center: myLatLng,
-                                        map: map,
-                                        strokeColor: '#ffffff',
-                                        strokeOpacity: 0.8,
-                                        strokeWeight: 2,
-                                        fillColor: '#009925',
-                                        fillOpacity: 0.35,
-                                        radius: 200
-                                    });
-                                }
-                            </script>
-                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcSv2oPG3tP4f_DFHF_VgyvfhMDTtyFlA&callback=initMap"></script>
+                            
                         </div>
 
                     </div>

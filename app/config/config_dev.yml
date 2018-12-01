@@ -36,4 +36,3 @@ monolog:
         #chromephp:
         #    type: chromephp
         #    level: info
-

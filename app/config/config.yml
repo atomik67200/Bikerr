@@ -1,5 +1,5 @@
 imports:
-#    - { resource: parameters.yml }
+  #  - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
 
@@ -7,15 +7,15 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
-    database_host: bikerrfrzdbeta.mysql.db
+    database_host: localhost
     database_port: 3306
-    database_name: bikerrfrzdbeta
-    database_user: bikerrfrzdbeta
-    database_password: 'Jecode4wcs'
+    database_name: bikerr
+    database_user: root
+    database_password: 'Be-&76Op$*'
     mailer_transport: smtp
-    mailer_host: ssl0.ovh.net
-    mailer_user: infos@bikerr.fr
-    mailer_password: rpoulidor36
+    mailer_host: imap.gmail.com
+    mailer_user: atomic67200@gmail.com
+    mailer_password: 'Be-&76Op$*'
     secret: 6HjMQx95S55U7mt2QkL9wTGktFCaGqhrjGn3GxTJ
 
 framework:
@@ -78,7 +78,7 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     encryption: ssl
-    port: 465    
+    port: 465
     spool: { type: memory }
 
 fos_user:
