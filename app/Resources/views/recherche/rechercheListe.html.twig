@@ -13,11 +13,11 @@
             <div class="container col-12 col-lg-7">
                 <div class="row">
                     <!-- barre de tri -->
-                    <div class="col-12 col-lg-12 form-control recherche-map">
+                    <div class="col-12 col-lg-12 recherche-map">
 
                         <form class="tri-box" method="post" action="">
                             <div class="input-group mb-3">
-                                <input id="search-city" name="ville" class="form-control" type="text" placeholder="Dans quelle ville voulez-vous un vélo ?" autocomplete="off" {% if ville is defined %}value="{{ ville }}{% endif %}">
+                                <input id="search-city" name="ville" type="text" placeholder="Dans quelle ville voulez-vous un vélo ?" autocomplete="off" {% if ville is defined %}value="{{ ville }}{% endif %}">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" id="submit" type="submit">Rechercher</button>
                                 </div>
@@ -86,7 +86,7 @@
                         </div>
                         <input type="button" class="bouton-sm" onclick="location.href='{{ path('recherche-liste') }}';" value="Supprimer tous les filtres" />
                     </div>
-                    <div class="container col-12 col-lg-12 form-control">
+                    <div class="container col-12 col-lg-12">
                         {% if velos is empty %}
                             <div class="notice" style="margin: 1em;">
                                 Nous sommes désolés, mais aucun vélo n'est disponible dans la ville recherchée.

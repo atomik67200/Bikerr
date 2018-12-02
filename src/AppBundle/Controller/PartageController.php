@@ -327,7 +327,7 @@ class PartageController extends Controller
 
             $message = (new \Swift_Message('Litige'))
                 ->setFrom('infos@bikerr.fr')
-                ->setTo('fabricevincent@bikerr.fr')
+                ->setTo('atomic67200@gmail.com')
                 ->setBody(
                     $this->renderView(
                         'email/annulationProprio.email.twig',
