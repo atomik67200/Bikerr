@@ -10,7 +10,7 @@ parameters:
     database_host: localhost
     database_port: 3306
     database_name: bikerr
-    database_user: root
+    database_user: Aurel
     database_password: 'Be-&76Op$*'
     mailer_transport: smtp
     mailer_host: imap.gmail.com
